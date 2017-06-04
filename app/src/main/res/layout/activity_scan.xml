@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    style="@style/MatchMatch">
+
+  <cn.bingoogolapple.qrcode.zxing.ZXingView
+      android:id="@+id/zxing_view"
+      style="@style/MatchMatch"
+      android:layout_gravity="center"
+      app:qrcv_animTime="1000"
+      app:qrcv_borderColor="@color/white"
+      app:qrcv_borderSize="1dp"
+      app:qrcv_cornerColor="@color/colorAccent"
+      app:qrcv_cornerLength="20dp"
+      app:qrcv_cornerSize="3dp"
+      app:qrcv_maskColor="#33FFFFFF"
+      app:qrcv_rectWidth="200dp"
+      app:qrcv_scanLineColor="@color/colorAccent"
+      app:qrcv_scanLineSize="1dp"
+      app:qrcv_topOffset="90dp"/>
+
+  <TextView
+      android:id="@+id/tv_hint"
+      style="@style/MatchWrap"
+      android:gravity="center"
+      android:text="请扫描餐桌或小票上的二维码"
+      android:textColor="@color/white"
+      android:layout_alignParentBottom="true"
+      android:layout_marginBottom="20dp"/>
+
+  <LinearLayout
+      style="@style/MatchWrap.Horizontal"
+      android:layout_above="@id/tv_hint"
+      android:layout_marginBottom="10dp">
+
+    <TextView
+        android:id="@+id/open_flashlight"
+        style="@style/AutoWrapTv"
+        android:text="打开灯光"/>
+
+    <TextView
+        android:id="@+id/close_flashlight"
+        style="@style/AutoWrapTv"
+        android:text="关闭灯光"/>
+  </LinearLayout>
+
+</RelativeLayout>

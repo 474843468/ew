@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.redbooth.WelcomePageLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/welcome_page"
+    tools:background="@color/page3">
+
+    <View
+        android:id="@+id/android_destiny"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="40dp"/>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="60dp">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/easel"/>
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="70dp">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/arrow_chart"/>
+
+            <View
+                android:id="@+id/arrow_chart_mask"
+                android:layout_width="150dp"
+                android:layout_height="90dp"
+                android:transformPivotX="150dp"
+                android:background="@color/white"/>
+
+        </FrameLayout>
+
+        <ImageView
+            android:id="@+id/avatar5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:layout_marginLeft="10dp"
+            android:scaleX="0"
+            android:scaleY="0"
+            android:src="@drawable/avatar_lucy2" />
+
+    </RelativeLayout>
+
+    <TextView
+        style="@style/text_title"
+        android:id="@+id/title"
+        android:layout_above="@+id/subtitle"
+        android:text="营业额不断攀升"
+        app:view_behavior=".behaviour.ParallaxTitleBehaviour" />
+
+    <TextView
+        style="@style/text_subtitle"
+        android:id="@+id/subtitle"
+        android:layout_alignParentBottom="true"
+        android:text="经营门店 管理员工 \n简直不要太好用."
+        app:view_behavior=".behaviour.ParallaxSubtitleBehaviour" />
+
+</com.redbooth.WelcomePageLayout>

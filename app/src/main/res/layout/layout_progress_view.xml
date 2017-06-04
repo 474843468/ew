@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/progress_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#33000000"
+    android:visibility="gone">
+
+  <FrameLayout
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_centerInParent="true">
+
+    <RelativeLayout
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:padding="20dp"
+        android:background="@drawable/bg_intercept_click_layout">
+
+      <TextView
+          android:id="@+id/tv_refresh_title"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_centerHorizontal="true"
+          android:layout_marginBottom="10dp"
+          android:text="连接中..."
+          android:textColor="@color/white"
+          android:textSize="20sp" />
+      <!--<com.pnikosis.materialishprogress.ProgressWheel-->
+      <!--android:id="@+id/progress_wheel"-->
+      <!--android:layout_width="80dp"-->
+      <!--android:layout_height="80dp"-->
+      <!--android:layout_below="@id/tv_refresh_title"-->
+      <!--android:layout_centerInParent="true"-->
+      <!--wheel:matProg_barColor="#5588FF"-->
+      <!--wheel:matProg_progressIndeterminate="true"-->
+      <!--/>-->
+
+      <ProgressBar
+          android:id="@+id/progress_wheel"
+          android:layout_width="60dp"
+          android:layout_height="60dp"
+          android:layout_below="@id/tv_refresh_title"
+          android:layout_centerInParent="true" />
+
+      <TextView
+          android:id="@+id/tv_progress_name"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_below="@id/progress_wheel"
+          android:layout_centerHorizontal="true"
+          android:layout_marginBottom="10dp"
+          android:textColor="@color/white"
+          android:textSize="18sp" />
+    </RelativeLayout>
+
+  </FrameLayout>
+
+</RelativeLayout>

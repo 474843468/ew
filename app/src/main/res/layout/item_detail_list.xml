@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    style="@style/MatchWrap"
+    android:padding="5dp">
+
+  <android.support.v7.widget.CardView
+      android:id="@+id/cardView"
+      style="@style/MatchWrap"
+      android:clickable="true"
+      android:foreground="?android:attr/selectableItemBackground"
+      app:cardCornerRadius="5dp"
+      app:cardElevation="2dp"
+      app:contentPadding="2dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:padding="5dp">
+
+      <TextView
+          android:id="@+id/tv_detail_name"
+          style="@style/WrapWrap"
+          android:text="商品名称" />
+
+      <TextView
+          android:id="@+id/tv_detail_multiple_unit_tag"
+          style="@style/WrapWrap"
+          android:layout_marginLeft="2dp"
+          android:layout_toRightOf="@id/tv_detail_name"
+          android:text="(双)"
+          android:textColor="@color/detail_multiple_unit_tag"
+          android:visibility="invisible" />
+
+      <TextView
+          android:id="@+id/tv_detail_wait_tag"
+          style="@style/WrapWrap"
+          android:layout_marginLeft="2dp"
+          android:layout_toRightOf="@id/tv_detail_multiple_unit_tag"
+          android:text="(待)"
+          android:textColor="#d01716"
+          android:visibility="invisible" />
+
+      <TextView
+          android:id="@+id/tv_disc_rate"
+          style="@style/WrapWrap"
+          android:layout_marginLeft="2dp"
+          android:layout_toRightOf="@id/tv_detail_wait_tag"
+          android:textColor="#00838f" />
+
+      <TextView
+          android:id="@+id/tv_serving_tag"
+          style="@style/WrapWrap"
+          android:layout_marginLeft="2dp"
+          android:layout_toRightOf="@id/tv_disc_rate"
+          android:textColor="#6d4c41" />
+
+      <TextView
+          android:id="@+id/tv_gift_tag"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_marginLeft="2dp"
+          android:layout_toRightOf="@id/tv_serving_tag"
+          android:text="(赠)"
+          android:textColor="@color/colorAccent" />
+
+      <TextView
+          android:id="@+id/tv_status_name"
+          style="@style/WrapWrap"
+          android:layout_alignParentRight="true"
+          android:text="状态" />
+
+      <TextView
+          android:id="@+id/tv_remarks"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_below="@id/tv_detail_name" />
+
+      <TextView
+          android:id="@+id/tv_format"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_alignParentBottom="true"
+          android:layout_marginBottom="5dp"
+          android:textColor="#5677fc" />
+
+      <TextView
+          android:id="@+id/tv_method"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_alignParentBottom="true"
+          android:layout_marginBottom="5dp"
+          android:layout_toRightOf="@id/tv_format"
+          android:textColor="#6a1b9a" />
+
+
+      <LinearLayout
+          style="@style/WrapWrap.Horizontal"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_alignParentBottom="true"
+          android:layout_alignParentRight="true"
+          android:layout_marginBottom="5dp"
+          android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_num"
+            style="@style/WrapWrap"
+            android:text="数量"
+            android:textColor="@color/colorAccent" />
+
+        <TextView
+            android:id="@+id/tv_num_unit"
+            style="@style/WrapWrap"
+            android:layout_marginRight="5dp"
+            android:text="(单位)" />
+
+        <TextView
+            android:id="@+id/tv_mult_num"
+            style="@style/WrapWrap"
+            android:text="结算数量"
+            android:textColor="@color/colorAccent" />
+
+        <TextView
+            android:id="@+id/tv_mult_unit"
+            style="@style/WrapWrap"
+            android:text="(多单位)" />
+
+      </LinearLayout>
+    </RelativeLayout>
+  </android.support.v7.widget.CardView>
+</RelativeLayout>

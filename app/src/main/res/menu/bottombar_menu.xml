@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+  <item
+      android:id="@+id/bb_menu_find_bill"
+      android:icon="@drawable/ic_find_bill"
+      android:title="找单"
+      />
+  <item
+      android:id="@+id/bb_menu_me"
+      android:icon="@drawable/ic_user"
+      android:title="个人"
+      />
+  <item
+      android:id="@+id/bb_menu_temporary"
+      android:icon="@drawable/ic_temporary_order"
+      android:title="临时订单"
+      />
+
+  <item
+      android:id="@+id/bb_menu_scan_code"
+      android:icon="@drawable/ic_scan_code"
+      android:title="扫一扫"
+      />
+
+  <!--<item-->
+      <!--android:id="@+id/bb_menu_notifications"-->
+      <!--android:icon="@drawable/ic_notifications"-->
+      <!--android:title="系统通知"-->
+      <!--/>-->
+
+</menu>

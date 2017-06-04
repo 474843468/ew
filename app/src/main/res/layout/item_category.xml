@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/tv_name"
+    style="@style/WrapWrap"
+    android:background="@drawable/selector_lv_cate_item"
+    android:gravity="center"
+    android:minHeight="?android:attr/listPreferredItemHeightSmall"
+    android:paddingLeft="8dp"
+    android:paddingRight="8dp"
+    android:textAppearance="?android:attr/textAppearanceListItemSmall"
+    android:textColor="@color/selector_text_cate"
+    android:textSize="14sp"
+    >
+
+</TextView>

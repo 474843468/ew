@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/MatchWrap.Vertical"
+    >
+
+  <TextView
+      style="@style/WrapWrap"
+      android:layout_marginTop="18dp"
+      android:text="点菜数量:"
+      android:textColor="#80000000"
+      android:textSize="15sp"
+      />
+
+  <EditText
+      android:id="@+id/et_order_unit"
+      style="@style/MatchWrap"
+      android:layout_marginTop="4dp"
+      android:inputType="number"
+      android:textColor="#000000"
+      android:textSize="18sp"
+      />
+
+  <TextView
+      style="@style/WrapWrap"
+      android:layout_marginTop="18dp"
+      android:text="结账数量:"
+      android:textColor="#80000000"
+      android:textSize="15sp"
+      />
+
+  <EditText
+      android:id="@+id/et_checkout_unit"
+      style="@style/MatchWrap"
+      android:layout_marginTop="4dp"
+      android:inputType="numberDecimal"
+      android:textColor="#000000"
+      android:textSize="18sp"
+      />
+</LinearLayout>

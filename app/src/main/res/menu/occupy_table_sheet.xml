@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    >
+  <item
+      android:id="@+id/action_add"
+      android:icon="@drawable/ic_occupy_table_add"
+      android:title="加菜"
+      />
+  <item
+      android:id="@+id/action_modify"
+      android:icon="@drawable/ic_occupy_table_modify"
+      android:title="改单"
+      />
+  <item
+      android:id="@+id/action_cancel"
+      android:icon="@drawable/ic_occupy_table_cancel"
+      android:title="撤单"
+      />
+  <!--<item-->
+      <!--android:id="@+id/action_urge"-->
+      <!--android:icon="@drawable/ic_occupy_table_urge"-->
+      <!--android:title="催单"-->
+      <!--/>-->
+</menu>

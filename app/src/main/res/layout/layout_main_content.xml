@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+  <TextView
+      android:layout_width="match_parent"
+      android:layout_height="?actionBarSize"
+      android:background="@color/colorPrimary"
+      android:gravity="center"
+      android:text="@string/app_name"
+      android:textColor="@color/white" />
+
+  <!--<ViewFlipper-->
+      <!--android:id="@+id/view_flipper"-->
+      <!--android:layout_width="match_parent"-->
+      <!--android:layout_height="160dp"-->
+      <!--android:flipInterval="2000">-->
+
+    <!--<ImageView-->
+        <!--android:layout_width="fill_parent"-->
+        <!--android:layout_height="300dip"-->
+        <!--android:scaleType="centerCrop"-->
+        <!--android:src="@drawable/bg_1" />-->
+
+    <!--<ImageView-->
+        <!--android:layout_width="fill_parent"-->
+        <!--android:layout_height="300dip"-->
+        <!--android:scaleType="centerCrop"-->
+        <!--android:src="@drawable/bg_2" />-->
+
+    <!--<ImageView-->
+        <!--android:layout_width="fill_parent"-->
+        <!--android:layout_height="300dip"-->
+        <!--android:scaleType="centerCrop"-->
+        <!--android:src="@drawable/bg_3" />-->
+  <!--</ViewFlipper>-->
+
+  <View
+      android:layout_width="match_parent"
+      android:layout_height="1dp"
+      android:background="@color/divider" />
+
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:background="@color/divider"
+      android:weightSum="3">
+
+    <TextView
+        android:id="@+id/tv_start_bill"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="1dp"
+        android:layout_weight="1"
+        android:padding="10dp"
+        android:background="@color/white"
+        android:drawablePadding="10dp"
+        android:drawableTop="@drawable/ic_start_bill"
+        android:gravity="center"
+        android:text="@string/start_bill" />
+
+    <TextView
+        android:id="@+id/tv_modify_bill"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="1dp"
+        android:layout_marginLeft="1dp"
+        android:layout_marginRight="1dp"
+        android:layout_weight="1"
+        android:padding="10dp"
+        android:background="@color/white"
+        android:drawablePadding="10dp"
+        android:drawableTop="@drawable/ic_modify_bill"
+        android:gravity="center"
+        android:text="@string/modify_bill" />
+
+    <TextView
+        android:id="@+id/tv_user_center"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="1dp"
+        android:layout_weight="1"
+        android:padding="10dp"
+        android:background="@color/white"
+        android:drawablePadding="10dp"
+        android:drawableTop="@drawable/ic_user_center"
+        android:gravity="center"
+        android:text="@string/user_center" />
+
+  </LinearLayout>
+
+</LinearLayout>
+
+    <!--content--><!--<LinearLayout--><!--android:layout_width="match_parent"--><!--android:layout_height="wrap_content"--><!--android:background="@color/divider"--><!--android:weightSum="3">-->
+
+    <!--<TextView--><!--android:id="@+id/tv_start_bill"--><!--android:layout_width="0dp"--><!--android:layout_height="wrap_content"--><!--android:layout_weight="1"--><!--android:padding="10dp"--><!--android:background="@color/white"--><!--android:drawablePadding="10dp"--><!--android:drawableTop="@drawable/ic_start_bill"--><!--android:gravity="center"--><!--android:text="@string/start_bill" />-->
+
+    <!--<TextView--><!--android:id="@+id/tv_merge_bill"--><!--android:layout_width="0dp"--><!--android:layout_height="wrap_content"--><!--android:layout_marginLeft="1dp"--><!--android:layout_marginRight="1dp"--><!--android:layout_weight="1"--><!--android:padding="10dp"--><!--android:background="@color/white"--><!--android:drawablePadding="10dp"--><!--android:drawableTop="@drawable/ic_merge_bill"--><!--android:gravity="center"--><!--android:text="@string/merge_bill" />-->
+
+    <!--<TextView--><!--android:id="@+id/tv_change_table"--><!--android:layout_width="0dp"--><!--android:layout_height="wrap_content"--><!--android:layout_weight="1"--><!--android:padding="10dp"--><!--android:background="@color/white"--><!--android:drawablePadding="10dp"--><!--android:drawableTop="@drawable/ic_modify_bill"--><!--android:gravity="center"--><!--android:text="@string/modify_bill" />-->
+
+    <!--</LinearLayout>-->
+
+    <!--<LinearLayout--><!--android:layout_width="match_parent"--><!--android:layout_height="wrap_content"--><!--android:background="@color/divider"--><!--android:weightSum="3">-->
+
+    <!--<TextView--><!--android:id="@+id/tv_add_prod"--><!--android:layout_width="0dp"--><!--android:layout_height="wrap_content"--><!--android:layout_marginBottom="1dp"--><!--android:layout_marginTop="1dp"--><!--android:layout_weight="1"--><!--android:padding="10dp"--><!--android:background="@color/white"--><!--android:drawablePadding="10dp"--><!--android:drawableTop="@drawable/ic_add"--><!--android:gravity="center"--><!--android:text="@string/add_prod" />-->
+
+    <!--<TextView--><!--android:id="@+id/tv_serving_prod"--><!--android:layout_width="0dp"--><!--android:layout_height="wrap_content"--><!--android:layout_margin="1dp"--><!--android:layout_weight="1"--><!--android:padding="10dp"--><!--android:background="@color/white"--><!--android:drawablePadding="10dp"--><!--android:drawableTop="@drawable/ic_serving"--><!--android:gravity="center"--><!--android:text="@string/serving_prod" />-->
+
+    <!--<TextView--><!--android:id="@+id/tv_refund_prod"--><!--android:layout_width="0dp"--><!--android:layout_height="wrap_content"--><!--android:layout_marginBottom="1dp"--><!--android:layout_marginTop="1dp"--><!--android:layout_weight="1"--><!--android:padding="10dp"--><!--android:background="@color/white"--><!--android:drawablePadding="10dp"--><!--android:drawableTop="@drawable/ic_refund"--><!--android:gravity="center"--><!--android:text="@string/refund_prod" />-->
+
+    <!--</LinearLayout>-->
+
+
+    <!--<LinearLayout--><!--android:layout_width="match_parent"--><!--android:layout_height="wrap_content"--><!--android:weightSum="3">-->
+
+    <!--<RelativeLayout--><!--android:layout_width="0dp"--><!--android:layout_height="wrap_content"--><!--android:layout_weight="1"--><!--android:background="@color/divider">-->
+
+    <!--<TextView--><!--android:id="@+id/tv_user_center"--><!--android:layout_width="match_parent"--><!--android:layout_height="wrap_content"--><!--android:layout_marginBottom="1dp"--><!--android:layout_marginRight="1dp"--><!--android:layout_weight="1"--><!--android:padding="10dp"--><!--android:background="@color/white"--><!--android:drawablePadding="10dp"--><!--android:drawableTop="@drawable/ic_user_center"--><!--android:gravity="center"--><!--android:text="@string/user_center" />--><!--</RelativeLayout>-->
+
+
+    <!--</LinearLayout>-->

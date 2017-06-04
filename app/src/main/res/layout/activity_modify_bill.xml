@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:zhy="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+  <RelativeLayout
+      android:id="@+id/content"
+      style="@style/MatchMatch">
+
+    <include
+        android:id="@+id/app_bar_layout"
+        layout="@layout/layout_appbar" />
+
+    <LinearLayout
+        style="@style/MatchMatch.Vertical"
+        android:layout_below="@id/app_bar_layout"
+        android:focusable="true"
+        android:focusableInTouchMode="true">
+
+      <RelativeLayout
+          android:id="@+id/rl_table"
+          style="@style/MatchWrap"
+          android:padding="10dp"
+          android:background="@drawable/selector_rl_modify_bill"
+          android:clickable="true">
+
+        <TextView
+            style="@style/WrapWrap"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:text="桌位"
+            android:textColor="@color/primary_text" />
+
+        <ImageView
+            android:id="@+id/tv_table_arrows"
+            style="@style/WrapWrap"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ic_arrows" />
+
+        <TextView
+            android:id="@+id/tv_table_name"
+            style="@style/WrapWrap"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:layout_toLeftOf="@id/tv_table_arrows"
+            android:gravity="center"
+            android:text="桌名" />
+      </RelativeLayout>
+
+      <View
+          android:layout_width="match_parent"
+          android:layout_height="1dp"
+          android:background="@color/divider" />
+
+      <RelativeLayout
+          android:id="@+id/rl_people_num"
+          style="@style/MatchWrap"
+          android:padding="10dp"
+          android:background="@drawable/selector_rl_modify_bill"
+          android:clickable="true"
+
+          >
+
+        <TextView
+            style="@style/WrapWrap"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:text="客人数"
+            android:textColor="@color/primary_text" />
+
+        <ImageView
+            android:id="@+id/tv_people_num_arrows"
+            style="@style/WrapWrap"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ic_arrows" />
+
+        <EditText
+            android:id="@+id/et_people_num"
+            style="@style/WrapWrap"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:layout_toLeftOf="@id/tv_people_num_arrows"
+            android:gravity="center"
+            android:hint="输入人数"
+            android:inputType="number"
+            android:textColor="@color/colorAccent" />
+      </RelativeLayout>
+
+      <!--促销-->
+      <View
+          android:layout_width="match_parent"
+          android:layout_height="1dp"
+          android:background="@color/divider" />
+
+      <RelativeLayout
+          android:id="@+id/rl_promotio"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:padding="10dp"
+            android:text="促销"
+            android:textColor="@color/primary_text" />
+
+        <TextView
+            android:id="@+id/tv_promotio_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:padding="10dp"
+            android:drawableLeft="@drawable/ic_delete_promotio"
+            android:drawablePadding="5dp"
+            android:gravity="center"
+            android:text="长期促销"
+            android:textColor="@color/colorAccent"
+            android:visibility="invisible" />
+      </RelativeLayout>
+
+
+      <View
+          android:layout_width="match_parent"
+          android:layout_height="1dp"
+          android:background="@color/divider" />
+
+      <RelativeLayout
+          android:id="@+id/rl_remarks"
+          style="@style/MatchWrap"
+          android:padding="10dp"
+          android:background="@drawable/selector_rl_modify_bill"
+          android:clickable="true"
+
+          >
+
+        <TextView
+            android:id="@+id/tv_remarks_title"
+            style="@style/WrapWrap"
+            android:gravity="center"
+            android:text="备注"
+            android:textColor="@color/primary_text" />
+
+        <com.zhy.view.flowlayout.TagFlowLayout
+            android:id="@+id/tags_remarks"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_remarks_title"
+            android:padding="10dp"
+            zhy:max_select="-1" />
+      </RelativeLayout>
+
+      <View
+          android:layout_width="match_parent"
+          android:layout_height="1dp"
+          android:background="@color/divider" />
+      <!--自定义备注-->
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:padding="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="自定义备注" />
+
+        <EditText
+            android:id="@+id/et_custom_remark"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:maxLength="150"
+            android:lines="3"/>
+      </LinearLayout>
+
+      <View
+          android:layout_width="match_parent"
+          android:layout_height="1dp"
+          android:background="@color/divider" />
+
+      <android.support.v7.widget.AppCompatButton
+          android:id="@+id/btn_confirm"
+          style="@style/MatchWrap"
+          android:layout_marginBottom="24dp"
+          android:layout_marginLeft="12dp"
+          android:layout_marginRight="12dp"
+          android:layout_marginTop="24dp"
+          android:padding="12dp"
+          android:background="@drawable/selector_btn_modify_bill_confirm"
+          android:text="确认"
+          android:textAllCaps="false" />
+    </LinearLayout>
+
+  </RelativeLayout>
+</ScrollView>

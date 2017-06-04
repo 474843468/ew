@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <color name="colorPrimary">#9ccc65</color>
+  <color name="colorPrimaryDark">#65aa01</color>
+  <color name="colorAccent">#FF5722</color>
+
+  <color name="primary_text">#212121</color>
+  <color name="secondary_text">#727272</color>
+  <color name="icons">#FFFFFF</color>
+  <color name="divider">#B6B6B6</color>
+
+
+
+  <color name="colorBottomFindBill">#9ccc65</color>
+  <color name="colorBottomTemporary">#ec407a</color>
+  <color name="colorBottomScanCode">#ab47bc</color>
+  <color name="colorBottomNotifications">#29b6f6</color>
+  <color name="colorBottomUser">#e84e40</color>
+
+
+  <color name="white">#ffffffff</color>
+  <color name="page1">#ff21B8AC</color>
+  <color name="page2">#ff218AB8</color>
+  <color name="page3">#ff21A5B8</color>
+  <color name="page4">#ff1F8B9B</color>
+  <color name="page4_anim_view">#e55555</color>
+
+  <color name="rocket">#e55555</color>
+  <color name="avatar1">#e1f4f8</color>
+  <color name="avatar2">#c6b9e7</color>
+  <color name="avatar3">#f8e71d</color>
+  <color name="avatar4">#65aa01</color>
+  <color name="avatar5">#4ee4c1</color>
+
+  <color name="table_status_occupy">#29b6f6</color>
+  <color name="table_status_overtime">#FF5722</color>
+  <color name="table_duration">#29b6f6</color>
+
+  <color name="detail_multiple_unit_tag">#ec407a</color>
+  <color name="detail_wait_tag">#ab47bc</color>
+  <color name="detail_status_ordered">#29b6f6</color>
+  <color name="detail_status_refund">#e84e40</color>
+  <color name="detail_serving">#ff6d00</color>
+  <color name="detail_not_serving">#ffb74d</color>
+
+  <color name="menu_btn_normal">#00000000</color>
+  <color name="menu_btn_pressed">#40ffffff</color>
+
+  <color name="light_gray">#efefef</color>
+  <color name="gray">#e7e4e4</color>
+  <color name="black">#000</color>
+</resources>

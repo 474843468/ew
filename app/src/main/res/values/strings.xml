@@ -1,0 +1,31 @@
+<resources>
+  <string name="app_name">逸掌柜服务生</string>
+  <string-array name="cart_delay_operate">
+    <item>延迟上菜</item>
+    <item>删除</item>
+  </string-array>
+  <string-array name="cart_promptly_operate">
+    <item>立即上菜</item>
+    <item>删除</item>
+  </string-array>
+
+  <string-array name="refund_serving_operate">
+    <item>退菜</item>
+    <item>标记已上</item>
+  </string-array>
+
+  <string-array name="refund_unserving_operate">
+    <item>退菜</item>
+    <item>标记未上</item>
+  </string-array>
+
+  <string name="start_bill">开单</string>
+  <string name="merge_bill">并单</string>
+  <string name="modify_bill">改单</string>
+
+  <string name="add_prod">加菜</string>
+  <string name="serving_prod">划菜</string>
+  <string name="refund_prod">退/赠菜</string>
+  <string name="user_center">个人中心</string>
+
+</resources>

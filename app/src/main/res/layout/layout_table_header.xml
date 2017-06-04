@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_table_header"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/item_table_header_height"
+    android:background="@color/light_gray"
+    android:orientation="horizontal">
+
+  <LinearLayout
+      android:layout_width="2dp"
+      android:layout_height="match_parent"
+      android:layout_marginRight="@dimen/item_table_header_margin_right"
+      android:background="@color/black"></LinearLayout>
+
+  <TextView
+      android:id="@+id/tv_table_header"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:layout_gravity="center"
+      android:background="@color/light_gray"
+      android:text="大厅"
+      android:textColor="@color/black"
+      android:textSize="@dimen/item_table_header_text_size" />
+</LinearLayout>

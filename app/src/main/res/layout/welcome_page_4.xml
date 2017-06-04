@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.redbooth.WelcomePageLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/page4"
+    style="@style/welcome_page"
+    tools:background="@color/page1">
+
+  <com.think.firewaiter.widget.RectangleWithCapCircleView
+      android:id="@+id/semicircle_page4"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      app:view_behavior=".behaviour.AnimationFillWithColor"/>
+
+  <ImageView
+      android:id="@+id/rocket_page4"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:src="@drawable/ic_rocket_144dp"
+      android:layout_centerHorizontal="true"
+      android:visibility="invisible"/>
+
+  <TextView
+      android:id="@+id/tv_title"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="逸掌柜服务生"
+      android:textSize="50dp"
+      android:textColor="@color/white"
+      android:layout_centerInParent="true"/>
+
+  <TextView
+      android:id="@+id/android_spin"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_centerHorizontal="true"
+      android:textSize="20sp"
+      android:layout_marginTop="20dp"
+      android:paddingLeft="30dp"
+      android:paddingRight="30dp"
+      android:paddingTop="10dp"
+      android:paddingBottom="10dp"
+      android:layout_below="@id/tv_title"
+      android:background="@drawable/selector_tv_turn_main"
+      android:textColor="@color/selector_text_turn_main"
+      android:text="开始体验"/>
+
+</com.redbooth.WelcomePageLayout>
